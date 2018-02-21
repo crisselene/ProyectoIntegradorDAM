@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.azul ul {
+	list-style-type: none;
+	height:2em;
+}
+
+.azul li {
+	float: left;
+	background-color: #00225a;
+	text-align: center;
+	width: 25em;
+	height:2em;
+}
+
+.azul {
+	background-color: #00225a;
+	padding-bottom: 3em;
+	width:100%;
+	padding-top: 3em;
+}
+
+.azul a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+}
+
+.azul a:hover {
+	color: #b38705;
+	font-size: 35px;
+}
+
+.azul li ul {
+	display: none;
+}
+
+.azul li:hover > ul {
+	display: block;
+}
+
+.azul li ul li {
+	position: relative;
+	text-align: left;
+}
+
+#margencillo {
+    margin-top: 3px;
+	
+	width:100%;
+	
+}
+
+#logo {
+	
+	height:100px;
+	margin-left: 50px ;
+}
+
+ul.topnav {
+	
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: "white";
+	float:top;
+}
+
+ul.topnav li {
+	float: left;
+	float: static;
+	position: static;
+
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    margin-left: 50px  ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.ul {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #00225a;
+}
+.li {
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    background-color: #00225a;
+    text-align: center;
+    padding-left: 3em;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #b38706;}
+
+ul.topnav li a.active {background-color: "white";
+text-align: center;
+margin-left: 10em;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+

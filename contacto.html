@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BCON</title>
+        <link rel="stylesheet" type="text/css" href="PRUEBA_CSS.css">
+		<meta charset="utf-8">
+		<style>
+body {margin: 0;padding:10px ;margin-left:-10px;}
+
+#logo {
+	
+	height:100px;
+	margin-left: 50px ;
+}
+
+ul.topnav {
+	
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: "white";
+	float:top;
+}
+
+ul.topnav li {
+	float: left;
+	float: static;
+	
+
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    margin-left: 50px  ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #b38706;}
+
+ul.topnav li a.active {background-color: "white";
+text-align: center;
+margin-left: 10em;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;
+
+ }  
+
+.img {
+
+background-image: url(equipo.png);
+transform: scaleY(1);
+transition: all 0.7s ease-in-out;
+height: 30em;
+width: 100%;
+
+
+}
+
+
+.h1{
+
+border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+margin: 0px 40px 0px 40px;
+transform: scale(1);
+color: black;
+transition: all 0.5s linear;
+text-align: center;
+opacity: 1;
+font-family: IMPRINT MT SHADOW letra;
+}
+
+
+.negrita {
+
+     font-weight: bold;
+     color: #b38706  ;
+}
+
+
+
+.caja {
+   
+    text-align: center;
+    font-family: IMPRINT MT SHADOW letra;
+    background: white;
+
+}
+
+.pregunta {
+    color:#b38706 ;
+    margin-top: 2em;
+    text-align: center;
+    font-family: IMPRINT MT SHADOW letra;
+    font-size: 40px;
+}
+
+.ul {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #00225a;
+}
+.li {
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    background-color: #00225a;
+    text-align: center;
+    padding-left: 3em;
+}
+.divecito {
+    background: #00225a;
+    padding-top:;
+    padding-bottom: 5em;
+}
+
+
+#margencito {
+  
+    margin-top:8em;
+}
+
+#margencillo {
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#p {
+     color:#00225a ;
+    font-family: IMPRINT MT SHADOW letra;
+}
+
+#izquierdita {
+    margin-right: 7em;
+}
+
+#margenDer {
+    color:#00225a ;
+    margin-left: 1em;
+}
+
+#uem {
+    float: right;
+    width: 14em;
+    margin-top: -3em;
+}
+
+#footercito {
+    margin-top: 20em;
+    border-top: solid;
+    border-width:1px;
+    border-color: #b38706 ;
+            
+}
+
+#copyright {
+    text-align: center;
+    color: #b38706;
+}
+
+#uemcita {
+    margin-left: 10em;
+    border-style: solid;
+    border-color: #b38705;
+    padding: 2em;
+    width: 19em;
+}
+
+
+</style>
+
+	</head>
+	<body>
+
+        
+        <ul class= "topnav">
+            <li><a class="active" href="index.html"><img id="logo" src= "logo.png" usemap = "#mapa1"></img></a></li>
+            <li> <a class="active" href="quien.html"> <h1 ><font color=#00225a>¿Quiénes somos?</font></h1> </a></li>
+            <li> <a class="active" href="contacto.html"><font color=#00225a> <h1 >Contáctanos</h1></font> </a></li>
+            
+        </ul>
+        </div>
+
+        <div >
+        <div class="divform">
+        <form>
+                <p class="pform">Nombre:</p>
+                <input type="text" name="Nombre" placeholder="Pon tu nombre...">
+                </br>
+                </br>
+                <p class="pform">Apellidos:</p>
+                <input type="text" name="Nombre" placeholder="Pon tus apellidos...">
+                </br>
+                </br>
+                <p class="pform">Mensaje:</p>
+                <textarea rows="4" cols="40" placeholder="Descripción de la consulta..."></textarea>
+                </br>
+                </br>
+                <form name="Correo" method="post" action="mailto:alvarosantacruz31@gmail.com">
+                <button onclick="alert ('¿Desea enviar este mensaje?')"><input type="submit" name="Enviar">
+        </form>
+        </div>
+
+        <div class="divMaps">
+            <a href="https://www.google.es/maps/place/Universidad+Europea+de+Madrid+(Campus+de+Alcobendas)/@40.5353731,-3.6165104,16.39z/data=!4m5!3m4!1s0x0:0x3dd2d61b103821da!8m2!3d40.5353597!4d-3.6163138?hl=es"><img src="MAPS.jpg"></a>
+
+        </div>
+
+        <div>
+        <a href="http://madrid.universidadeuropea.es/"><img src="uem_copy.jpg"></a>
+        </div>
+        
+  
+
+ 
+        
+    
+
+	</body>
+
+</html>

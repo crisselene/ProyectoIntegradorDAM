@@ -1,0 +1,60 @@
+@charset "utf-8"; 
+
+.h1Footer {
+	color: #b38705;
+	font-family: Imprint MT Shadow;
+	font-size: 20px;
+	text-align: center;
+}
+
+#a1 {
+	float: right;
+}
+
+.ulCabeza {
+	
+	 list-style-type: none;
+	 padding: 0;
+	 overflow: hidden;
+	 float: top;
+	 width: 100%;	
+}
+
+.liCabeza {
+	float: left;
+	float: static;
+	
+}
+
+.aCabeza {
+	display: block;
+	color: white;
+	margin-left: 50px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.divform {
+	margin-left: 10em;
+	border-style: solid;
+	border-color: #b38705;
+	padding: 2em;
+	width: 19em;
+	padding-top: 1em;
+	float: left;
+}
+
+.divMaps {
+	border-style: solid;
+	border-color: #b38705;
+	float: right;
+	margin-right: 10em;
+}
+
+.pform {
+	font-family: Imprint MT Shadow;
+	font-size: 30px;
+	color: #00225a;
+}
+

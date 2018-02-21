@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BCON</title>
+        <link rel="stylesheet" type="text/css" href="quienes.css">
+		<meta charset="utf-8">
+		<style>
+body {margin: 0;padding:10px ;margin-left:-10px;}
+
+#logo {
+	
+	height:100px;
+	margin-left: 50px ;
+}
+
+ul.topnav {
+	position: absolute;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: "white";
+	float:top;
+}
+
+ul.topnav li {
+	float: left;
+	float: static;
+	position: static;
+
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    margin-left: 50px  ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #b38706;}
+
+ul.topnav li a.active {background-color: "white";
+text-align: center;
+margin-left: 10em;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+}
+
+#searchform { /*id para el buscador*/
+
+    width: 280px;
+
+  	height:30px;
+
+    padding: 8px;
+
+ 	margin:-10px auto; /*para que suba o baje*/
+
+ 	margin-left: 20px; /*derecha margen*/
+
+  	float: right;
+
+    
+
+
+}
+
+ 
+
+#searchform input {
+
+    width: 190px;
+
+ 	height:20px;
+
+    padding: 5px;
+
+    float: left;
+
+    border: 0;
+
+    background: #eee; ^/*color fondo casillero*/
+
+    border-radius: 3px 0 0 3px;
+
+ 	box-shadow: 0 1px 1px rgba(0,0,0,.4) inset; /*sombra del casillero*/
+
+}
+
+ 
+
+#searchform input:focus {
+
+    outline: 0;
+
+  	height:21px;
+
+    background: #fff;
+
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+
+}
+
+ 
+
+#searchform input:-webkit-input-placeholder {
+
+   color: #999;
+
+   font-weight: normal;
+
+   font-style: italic;
+
+}
+
+
+
+#searchform input:-moz-placeholder {
+
+    color: #999;
+
+    font-weight: normal;
+
+    font-style: italic;
+
+}
+
+ 
+
+#searchform input:-ms-input-placeholder {
+
+    color: #999;
+
+    font-weight: normal;
+
+    font-style: italic;
+
+}   
+
+ 
+
+#searchform button { /*propiedades del botón*/
+
+    position: relative;
+
+    float: right;
+
+    border: 0;
+
+    cursor: pointer;
+
+    height: 30px;
+
+    width: 80px;
+
+    font-size:15px;
+
+    color: #fff;
+
+    background: #00225a ;
+
+    border-radius: 0 3px 3px 0;
+
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+
+}  
+
+ 
+
+#searchform button:hover{ /*cuando te pones encima*/
+
+    background:#b38706 ;
+
+}
+
+ 
+
+#searchform button:active,
+
+#searchform button:focus{
+
+    background: #2672e0;
+
+}
+
+ 
+
+#searchform button:before { /* flecha */
+
+    content: '';
+
+    float: right ;
+
+    border-width: 8px 8px 8px 0;
+
+    border-style: solid solid solid none;
+
+    border-color: transparent #00225a  transparent;
+
+    top: 8px;
+
+    left: -5px;
+
+}
+
+ 
+#searchform button:hover:before{
+
+    border-right-color: #b38706 ;
+
+}
+
+
+#searchform button:focus:before{
+
+    border-right-color: #b38706 ;
+
+}   
+.img {
+
+background-image: url(equipo.png);
+transform: scaleY(1);
+transition: all 0.7s ease-in-out;
+height: 30em;
+width: 100%;
+position: absolute;
+
+}
+
+
+.mascara {
+position: static;
+background-color: rgba(119, 80, 21, 0.9);
+transition: all 0.5s linear;
+opacity: 0;
+width: 100%;
+height: 30em;
+text-align: center;
+background-image: 
+}
+
+
+.h1{
+
+border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+margin: 0px 40px 0px 40px;
+transform: scale(1);
+color: black;
+transition: all 0.5s linear;
+text-align: center;
+opacity: 1;
+font-family: IMPRINT MT SHADOW letra;
+}
+
+.img:hover .mascara {
+opacity: 0.5;
+height: 30em;
+width: 100%;
+text-align: center;
+}
+
+.img:hover img {
+transform: scale(10);
+opacity: 0;
+height: 20em;
+width: 98%;
+}
+
+.img:hover h1{
+transform: scale(2);
+opacity: 1;
+color: white;
+text-align: center;
+}
+
+#trato {
+    float: left;
+    margin-top: -130px;
+    
+}
+
+#vision{
+    margin-left: -1px;
+    margin-top: -130px;
+    float:right;
+    width: 13em;
+}
+
+.negrita {
+
+     font-weight: bold;
+     color: #b38706  ;
+}
+
+#ptrato {
+    text-align: left;
+    margin-top: 1em;
+}
+
+.h1 {
+    text-align: center;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+.caja {
+    position: relative;
+    text-align: center;
+    font-family: IMPRINT MT SHADOW letra;
+    background: white;
+
+}
+
+.pregunta {
+    color:#b38706 ;
+    margin-top: 2em;
+    text-align: center;
+    font-family: IMPRINT MT SHADOW letra;
+    font-size: 40px;
+}
+
+.ul {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #00225a;
+}
+.li {
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    background-color: #00225a;
+    text-align: center;
+    padding-left: 3em;
+}
+.divecito {
+    background: #00225a;
+    padding-top:;
+    padding-bottom: 5em;
+}
+.ant {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.ant:hover {
+    color: #b38705;
+    font-size: 35px;
+}
+
+
+.div13 {
+    padding-top: -10px;
+    margin-top: -10px;
+}
+
+#margencito {
+  
+    margin-top:8em;
+}
+
+#margencillo {
+    margin-top: -30px;
+}
+
+#p {
+     color:#00225a ;
+    font-family: IMPRINT MT SHADOW letra;
+}
+
+#izquierdita {
+    margin-right: 7em;
+}
+
+#margenDer {
+    color:#00225a ;
+    margin-left: 1em;
+}
+
+#uem {
+    float: right;
+    width: 14em;
+    margin-top: -3em;
+}
+
+#footercito {
+    margin-top: 3em;
+    border-top: solid;
+    border-width:1px;
+    border-color: #b38706 ;
+}
+
+#copyright {
+    text-align: center;
+    color: #b38706 ;
+}
+
+</style>
+
+	</head>
+	<body>
+        <div id = "margencillo">
+		
+		<ul class= "topnav">
+			<li><a class="active" href="index.html"><img id="logo" src= "logo.png" usemap = "#mapa1"></img></a></li>
+			<li> <a class="active" href="quien.html"> <h1 ><font color=#00225a>¿Quiénes somos?</font></h1> </a></li>
+			<li> <a class="active" href="contacto.html"><font color=#00225a> <h1 >Contáctanos</h1></font> </a></li>
+			
+        </ul>
+        </div>
+
+        <div id="margencito">
+
+    <div class="img">
+        <div class="mascara">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1 class="h1">"Todo es posible en nuestras manos"</h1>
+        </div>
+    </div>
+</div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="caja">
+        <h1 class="pregunta">¿Quiénes somos?</h1>
+            <p id="margenDer">La necesaria vinculación entre los estudios y su aplicación profesional nos
+            llevó a plantearnos este reto: crear, simular una asesoría consultoría ”real”,
+            en la que pudiéramos desarrollar no sólo todo lo aprendido en cuanto a
+            conocimientos teóricos se refiere, sino también dentro de un entorno en el
+            que se pudieran trabajar también competencias transversales como la
+            autonomía, autocrítica, capacidad de organización, trabajo en equipo,
+            colaboración, atención al cliente, etc.</p>
+            <p id="margenDer">Este proceso ya es una realidad y tenemos una web diseñada por
+            estudiantes de CFGS de Desarrollo y Aplicaciones Multiplataforma, con un
+            logo, eslogan y nombre creado por los estudiantes de Ventas y Espacios
+            Comerciales; y una misión, visión ideada por los estudiantes de
+            Administración y Finanzas de primero.</p>
+            <p id="margenDer">Somos gente joven, formada, ilusionada, con ganas de enfrentarnos a retos
+            y dispuestos a dar lo mejor de nosotros mismos: sólo necesitamos para
+            garantizar el éxito de nuestra actividad, tu confianza, futuro cliente.</p>
+    </div>
+
+    <h1 class="pregunta">Misión </h1>
+    <div id="ptrato" >
+        <img id="trato" src="trato.png"> 
+      
+        <p id="p">El propósito de BCON es dar la máxima<font class="negrita"> seguridad al empresario</font>,
+        acompañándole en situaciones complejas a nivel fiscal, contable y laboral.
+        Tratamiento individual, personalizado y de calidad ajustado a las
+        necesidades de Autónomos, PYMEs y grandes empresas. Trabajamos en
+        equipo en la búsqueda de la mejor solución para nuestro cliente.</p>
+    </div>
+
+    <h1 class="pregunta" id="izquierdita"> Visión </h1>
+    <div id="ptrato"  >
+        <img id="vision" src="vision.png"> 
+        
+        <p id="margenDer">Generar confianza en la sociedad, desde la <font class="negrita">constante innovación</font>, que nos
+        ayude a convertirnos, mantenernos y seguir siendo líderes en soluciones
+        contables, administrativas, laborales y financieras. Desarrollar un plan de
+        acción cuya meta es lograr el éxito de nuestras empresas clientes y de sus
+        proyectos. De esta manera contribuimos al crecimiento de nuestra sociedad
+        y apostamos por su desarrollo.</p>
+    </div>
+<br>
+<hr>
+    <div>
+        <a  href="http://madrid.universidadeuropea.es/"><img id = "finalcito" src="uem_copy.jpg"></a>
+    </div>
+
+</html>
